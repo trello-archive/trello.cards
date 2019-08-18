@@ -1,0 +1,24 @@
+{
+  "name": "trello.cards",
+  "version": "1.0.0",
+  "repository": "https://github.com/trello/trello.cards.git",
+  "author": "Matt Cowan <matt@trello.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "less": "^3.10.0",
+    "parcel-bundler": "^1.12.3"
+  },
+  "browserslist": [
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions"
+  ]
+}

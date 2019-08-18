@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trello Cards</title>
+    <meta name="description" content="Take your Trello cards with you across the web.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://p.trellocdn.com/power-up.nachos.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.less">
+    <script src="js/cardComponentLoader.js"></script>
+  </head>
+  <body>
+    <div class="segment mod-blue">
+      <div class="container centered">
+        <h1>Trello Cards</h1>
+        <br />
+        <h2>Take your Trello cards with you across the web.</h2>
+        <br />
+        <br />
+        <p>Your Trello cards are important. There is no need for them to be locked up on your Trello boards.</p>
+        <p>You can embed your Trello cards in Confluence pages, Dropbox Paper documents, or render them natively on your own site.</p>
+      </div>
+    </div>
+    <div class="segment mod-gray">
+      <div class="container centered">
+        <h3>Evolution</h3>
+        <p>Trello cards have evolved with Trello and continue to do so</p>
+        <div class="two-by-two-grid">
+          <img src="img/card-v1.png" width="300px" alt="Early Trello Card">
+          <div id="pirate-card" class="wide-card"></div>
+          <p>Circa 2013</p>
+          <p>Today</p>
+        </div>
+      </div>
+    </div>
+    <div class="segment">
+      <div class="container centered">
+        <h3>No Work Required</h3>
+        <p>Some of your favorite tools already know how to detect Trello card urls, and enrich them with live embeds.</p>
+        <div class="two-by-two-grid">
+          <img src="img/confluence.png" width="400px">
+          <img src="img/paper.png" width="400px">
+          <p>Confluence</p>
+          <p>Dropbox Paper</p>
+        </div>
+      </div>
+    </div>
+    <div class="segment mod-light-blue">
+      <div class="container centered">
+        <h3>Quick & Easy Embedding</h3>
+        <p>Embed a Trello card anywhere you can load some javascript in 4 lines</p>
+        <div class="two-column-grid">
+          <div>
+            <blockquote class="trello-card-compact">
+              <a href="https://trello.com/c/CjBy4OpQ/1-all-hands-on-deck">All hands on deck!</a>
+            </blockquote>
+          </div>
+          <div>
+            <script src="https://gist.github.com/mpcowan/ba29ff0b6b3691c108726178d9db39f9.js"></script>
+          </div>
+        </div>
+        <p>📚 Learn more in our <a href="https://developers.trello.com/docs/cards">embedding guide</a></p>
+      </div>
+    </div>
+    <div class="segment mod-gray">
+      <div class="container centered">
+        <h3>Render Trello Cards Natively</h3>
+        <p>For when you are comfortable with a bit more code and want a bit more control</p>
+      </div>
+      <div class="two-column-grid">
+        <div>
+          <script src="https://gist.github.com/mpcowan/2b3068fbaff7033ad1cfebaad5d35c8e.js"></script>
+        </div>
+        <div>
+          <div id="demo-card"></div>
+        </div>
+      </div>
+      <p class="centered">📚 Learn more in our <a href="https://developers.trello.com/docs/card">card component guide</a></p>
+    </div>
+    <div class="segment">
+      <div class="container centered">
+        <p>Made with 💖 by <a href="https://trello.com/home">Trello</a> in NYC and around the world.</p>
+      </div>
+    </div>
+
+
+    <script src="https://p.trellocdn.com/embed.min.js"></script>
+  </body>
+</html>
