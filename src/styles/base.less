@@ -28,7 +28,8 @@
 
 .two-column-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
+  grid-column-gap: 12px;
   align-items: center;
   justify-items: center;
   margin-top: 24px;
@@ -50,11 +51,15 @@
   display: block;
 }
 
+.screenshot {
+  width: 100%;
+}
+
 trello-card {
   text-align: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .container {
     padding: 0 8px;
   }
@@ -69,10 +74,6 @@ trello-card {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-row-gap: 12px;
-  }
-
-  .screenshot {
-    width: 100%;
   }
 
   .gist {
@@ -90,12 +91,7 @@ trello-card {
 
 @media screen and (max-width: 860px) {
   .two-column-grid {
-    grid-template-columns: auto auto;
-    grid-column-gap: 12px;
-  }
 
-  .screenshot {
-    width: 100%;
   }
 
   .gist {
