@@ -1,8 +1,4 @@
-const scriptSrc = `https://p.trellocdn.com/${
-  window.customElements ? 'card.min.js' : 'card-polyfilled.min.js'
-}`;
-
-import(scriptSrc).then(async () => {
+window.cardComponentLoaded.then(() => {
   const idCard = 'CjBy4OpQ';
   const api = 'https://api.trello.com/1/card';
   const opts = {
@@ -16,16 +12,17 @@ import(scriptSrc).then(async () => {
   const qs = Object.keys(opts)
     .map(param => `${param}=${opts[param]}`)
     .join('&');
-  const resp = await fetch(`${api}/${idCard}?${qs}`);
-  const cardData = await resp.json();
+  fetch(`${api}/${idCard}?${qs}`)
+  .then((resp) => resp.json())
+  .then((cardData) => {
+    const containers = ['pirate-card', 'demo-card'];
+    containers.forEach(id => {
+      const cardEl = document.createElement('trello-card');
+      cardEl.card = cardData;
+      cardEl.labeltext = true;
+      cardEl.colorblind = true;
 
-  const containers = ['pirate-card', 'demo-card'];
-  containers.forEach(id => {
-    const cardEl = document.createElement('trello-card');
-    cardEl.card = cardData;
-    cardEl.labeltext = true;
-    cardEl.colorblind = true;
-
-    document.getElementById(id).appendChild(cardEl);
+      document.getElementById(id).appendChild(cardEl);
+    });
   });
 });
