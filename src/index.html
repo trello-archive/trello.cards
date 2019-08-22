@@ -8,17 +8,6 @@
 
     <link rel="stylesheet" type="text/css" href="https://p.trellocdn.com/power-up.nachos.css">
     <link rel="stylesheet" type="text/css" href="styles/base.less">
-
-    <script>
-      const scriptSrc = window.customElements ? '/card.min.js' : '/card-polyfilled.min.js';
-      window.cardComponentLoaded = new Promise(function(resolve) {
-        const cardJs = document.createElement('script');
-        cardJs.crossOrigin = 'anonymous';
-        cardJs.src = 'https://p.trellocdn.com' + scriptSrc;
-        cardJs.onload = resolve;
-        document.head.appendChild(cardJs);
-      });
-    </script>
   </head>
   <body>
     <div class="segment mod-blue">

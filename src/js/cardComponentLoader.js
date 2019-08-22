@@ -1,4 +1,16 @@
-window.cardComponentLoaded.then(() => {
+const scriptSrc = `https://p.trellocdn.com/${
+  window.customElements ? 'card.min.js' : 'card-polyfilled.min.js'
+}`;
+
+const cardComponentLoaded = new Promise((resolve) => {
+  const cardJs = document.createElement('script');
+  cardJs.crossOrigin = 'anonymous';
+  cardJs.src = scriptSrc;
+  cardJs.onload = resolve;
+  document.head.appendChild(cardJs);
+});
+
+cardComponentLoaded.then(() => {
   const idCard = 'CjBy4OpQ';
   const api = 'https://api.trello.com/1/card';
   const opts = {
