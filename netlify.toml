@@ -15,6 +15,7 @@
     default-src 'none';
     form-action 'none';
     frame-ancestors 'none';
+    font-src 'self';
     img-src 'self' data: https://trello-attachments.s3.amazonaws.com https://trello-avatars.s3.amazonaws.com;
     connect-src 'self' https://api.trello.com;
     frame-src https://trello.com;
