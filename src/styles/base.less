@@ -266,6 +266,10 @@ a {
   margin-top: 24px;
 }
 
+.two-column-grid.symmetric {
+  grid-template-columns: 1fr 1fr;
+}
+
 .three-column-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -318,7 +322,7 @@ a {
     padding: 0 8px;
   }
 
-  .two-column-grid {
+  .two-column-grid, .two-column-grid.symmetric {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
