@@ -211,6 +211,11 @@ a {
   top: 20px;
 }
 
+.hero-image {
+  max-height: 336px;
+  width: 100%;
+}
+
 .logo-link:hover {
   opacity: 0.8;
 }
@@ -233,7 +238,7 @@ a {
   text-align: center;
 }
 
-.mod-blue {
+.mod-blue, .mod-blue-gradient {
   background-color: #0079BF;
   color: #fff;
 
@@ -246,6 +251,10 @@ a {
   p {
     color: #fff;
   }
+}
+
+.mod-blue-gradient {
+  background-image: linear-gradient(to bottom right, #007ABF , #5068C5);
 }
 
 .mod-gray {
@@ -267,7 +276,7 @@ a {
 }
 
 .two-column-grid.symmetric {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
 }
 
 .three-column-grid {
