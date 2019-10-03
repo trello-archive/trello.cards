@@ -11,7 +11,7 @@ const cardComponentLoaded = new Promise((resolve) => {
 });
 
 cardComponentLoaded.then(() => {
-  const idCard = 'CjBy4OpQ';
+  const idCard = '5c3e2ec871be6643f85f44a6';
   const api = 'https://api.trello.com/1/card';
   const opts = {
     fields: 'name,closed,url,badges,idAttachmentCover,labels',
