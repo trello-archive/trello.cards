@@ -27,7 +27,7 @@ cardComponentLoaded.then(() => {
   fetch(`${api}/${idCard}?${qs}`)
   .then((resp) => resp.json())
   .then((cardData) => {
-    const containers = ['pirate-card', 'demo-card'];
+    const containers = ['demo-card'];
     containers.forEach(id => {
       const cardEl = document.createElement('trello-card');
       cardEl.card = cardData;
