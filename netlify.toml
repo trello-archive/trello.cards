@@ -17,6 +17,7 @@
     frame-ancestors 'none';
     font-src 'self';
     img-src 'self' data: https://trello-attachments.s3.amazonaws.com https://trello-avatars.s3.amazonaws.com;
+    media-src 'self';
     connect-src 'self' https://api.trello.com;
     frame-src https://trello.com;
     script-src 'self' https://gist.github.com/mpcowan/2b3068fbaff7033ad1cfebaad5d35c8e.js https://gist.github.com/mpcowan/ba29ff0b6b3691c108726178d9db39f9.js https://p.trellocdn.com/card.min.js https://p.trellocdn.com/card-polyfilled.min.js https://p.trellocdn.com/embed.min.js;
