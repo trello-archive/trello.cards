@@ -5,7 +5,7 @@
   "author": "Matt Cowan <matt@trello.com>",
   "license": "MIT",
   "engines": {
-    "node": "12.x"
+    "node": "13.x"
   },
   "scripts": {
     "build": "parcel build src/index.html",
